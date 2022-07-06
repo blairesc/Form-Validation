@@ -65,12 +65,21 @@ body{
     border-top: 2px solid transparent;
 }
 
+.input-field input:is(:focus, :valid){
+    border-bottom-color: rgba(84, 58, 183, 1);
+}
+
 .input-field i{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     color: #999;
     font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+   color: rgba(84, 58, 183, 1);
 }
 
 .input-field i.icon{
@@ -84,5 +93,6 @@ body{
 }
 
 .input-field i.hidden:hover{
-    color: rgba(84, 58, 183, 1);
+    color: rgba(0, 172, 193, 1);
+    transition: all 0.2s ease;
 } 
