@@ -51,7 +51,6 @@ body{
     margin-top: 30px;
     height: 50px;
     width: 100%;
-    background-color: red;
 }
 
 .input-field input{
@@ -125,4 +124,23 @@ body{
 
 .form a:hover{
     text-decoration: underline;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    background-color: rgba(0, 172, 193, 1);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #247abc;
 }
