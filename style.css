@@ -16,6 +16,7 @@ body{
     background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
 }
 
+
 .container{
     position: relative;
     max-width: 430px;
@@ -89,6 +90,7 @@ body{
 
 .input-field i.hidden{
     right: 0;
+    padding: 10px;
     cursor: pointer;
 }
 
