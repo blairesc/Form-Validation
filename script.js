@@ -1,5 +1,8 @@
 let passwordInput = document.getElementById('password');
 let eyeIcon = document.getElementById('eyeIcon');
+const container = document.querySelector('.container'); 
+const logIn = document.querySelector('.login-link');
+const signUp = document.querySelector('.signup-link');
 
 
 //Function that toggles showing the password entered
@@ -16,4 +19,13 @@ eyeIcon.onclick = function() {
     }
 };
 
+
+//Appear Signup & Login
+signUp.onclick = function() {
+    container.classList.add('active');
+}
+
+logIn.onclick = function() {
+    container.classList.remove('active');
+}
 
