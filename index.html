@@ -16,13 +16,14 @@
     
     <div class="container">
         <div class="forms">
+            <!--Login Form-->
             <div class="form login">
                 <span class="title">Login</span>
 
                 <form action="#">
                     <!--Email & Password-->
                     <div class="input-field">
-                        <input type="text" id="email" placeholder="Enter your email" required>
+                        <input type="text" id="email" placeholder="Enter your name" required>
                         <i class="fa-solid fa-envelope icon"></i>
                     </div>
                     <div class="input-field">
@@ -53,8 +54,35 @@
                         </span>
                     </div>
                 </form>
-
             </div>
+
+            <!--Registration Form-->
+            <div class="form login">
+                <span class="title">Sign Up</span>
+            
+                <form action="#">
+                    <!--Name, Email & Password-->
+                    <div class="input-field">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="email" placeholder="Email" required>
+                        <i class="fa-solid fa-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="password" placeholder="Create Password" required>
+                        <i class="fa-solid fa-lock icon"></i>
+                        <i class="fa-solid fa-eye-slash hidden" id="eyeIcon"></i>
+                    </div>
+            
+                    <!--Button-->
+                    <div class="input-field button">
+                        <input type="button" value="Create Account">
+                    </div> 
+                </form>
+            </div>
+
         </div>
     </div>
 
