@@ -87,7 +87,8 @@ body{
 }
 
 .input-field input{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;  
     padding: 0 35px;
@@ -111,7 +112,7 @@ body{
     transition: all 0.2s ease;
 }
 
-.input-field input:is(:focus, :valid) ~ i {
+.input-field input:is(:focus, :valid) ~ i{
    color: rgba(0, 172, 193, 1);
 }
 
@@ -129,12 +130,28 @@ body{
 .input-field i.hidden:hover{
     color: #247abc;
     transition: all 0.2s ease;
-} 
+}
+
+.input-field.success input{
+    border-bottom-color: #09c372;
+}
+
+.input-field.error input{
+    border-bottom-color: #ff3860;
+}
+
+.input-field .error{
+    color: #ff3860;
+    font-size: 11px;
+    height: 13px;
+    
+}
+
 
 .form .checkbox-text{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .checkbox-text .checkbox-content {
@@ -165,6 +182,9 @@ body{
 }
 
 .form .button input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     color: #fff;
     letter-spacing: 1px;
