@@ -24,15 +24,18 @@
                 <form action="#" name="login">
                     <!--Email & Password-->
                     <div class="input-field">
-                        <input type="text" id="email" placeholder="Email" required>
+                        <input type="text" id="email" name="email" placeholder="Email">
                         <i class="fa-solid fa-envelope icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" id="password" placeholder="Password" required>
-                        <i class="fa-solid fa-lock icon"></i>
-                        <i class="fa-solid fa-eye-slash hidden" id="toggleShow"></i>
+                        <div class="error"></div>
                     </div>
 
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <i class="fa-solid fa-eye-slash hidden" id="toggleShow"></i>
+                        <div class="error"></div>
+                    </div>
+                    
                     <!--Remember Me & Forgot Password-->
                     <div class="checkbox-text">
                         <div class="checkbox-content">
@@ -57,24 +60,29 @@
                 </form>
             </div>
 
-            <!--Registration Form-->
+            <!--Registration / Sign Up Form-->
             <div class="form signup">
                 <span class="title">Sign Up</span>
             
                 <form action="#" name="signup">
                     <!--Name, Email & Password-->
                     <div class="input-field">
-                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="text" id="name" name="name" placeholder="Name">
                         <i class="fa-solid fa-user"></i>
+                        <div class="error"></div>
                     </div>
+
                     <div class="input-field">
-                        <input type="text" id="email" placeholder="Email" required>
+                        <input type="text" id="email" name="email" placeholder="Email">
                         <i class="fa-solid fa-envelope icon"></i>
+                        <div class="error"></div>
                     </div>
+                    
                     <div class="input-field">
-                        <input type="password" id="password" placeholder="Create Password" required>
+                        <input type="password" id="password" name="password" placeholder="Password (8+ characters)">
                         <i class="fa-solid fa-lock icon"></i>
                         <i class="fa-solid fa-eye-slash hidden" id="toggleShow"></i>
+                        <div class="error"></div>
                     </div>
                     
                     <!--Terms of Service & Privacy Policy-->
