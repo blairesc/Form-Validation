@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Log In-Sign Up</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="forms">
+            
+            <!--Login Form-->
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#" name="login">
+                    <!--Email & Password-->
+                    <div class="input-field">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <i class="fa-solid fa-eye-slash hidden" id="toggleShow"></i>
+                        <div class="error"></div>
+                    </div>
+                    
+                    <!--Remember Me & Forgot Password-->
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember Me</label>
+                        </div>
+
+                        <a href="#" class="text">Forgot Password</a>
+                    </div>
+
+                    <!--Button-->
+                    <div class="input-field button">
+                        <input type="submit" value="Login Now">
+                    </div>
+
+                    <!--Sign Up-->
+                    <div class="login-signup">
+                        <span class="text">Not a member?
+                            <a href="#" class="text signup-link">Sign up</a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+            <!--Registration / Sign Up Form-->
+            <div class="form signup">
+                <span class="title">Sign Up</span>
+            
+                <form action="#" name="signup">
+                    <!--Name, Email & Password-->
+                    <div class="input-field">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <div class="error"></div>
+                    </div>
+                    
+                    <div class="input-field">
+                        <input type="password" id="password" name="password" placeholder="Password (8+ characters)">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <i class="fa-solid fa-eye-slash hidden" id="toggleShow"></i>
+                        <div class="error"></div>
+                    </div>
+                    
+                    <!--Terms of Service & Privacy Policy-->
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">I agree to the <a href="#" class="text">Terms of Service</a> and <a href="#" class="text">Privacy Policy</a></label>
+                        </div>
+                    </div>
+
+                    <!--Button-->
+                    <div class="input-field button">
+                        <input type="submit" value="Create Account">
+                    </div> 
+
+                    <!--Sign Up-->
+                    <div class="login-signup">
+                        <span class="text">Already a member?
+                            <a href="#" class="text login-link">Log in</a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--JS-->
+    <script src="./script.js"></script>
+</body>
+</html>
