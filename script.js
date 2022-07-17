@@ -6,7 +6,7 @@ const signUp = document.querySelector('.signup-link');
 
 //Log In Variables
 const logInForm = document.forms['login'];
-const logInEmail = document.forms['login']['name'];
+const logInEmail = document.forms['login']['email'];
 const logInPassword = document.forms['login']['password'];
 
 //Sign Up Variables
@@ -47,11 +47,20 @@ logIn.onclick = function() {
     container.classList.remove('active');
 }
 
+
+
 //Submit Sign Up
 signUpForm.addEventListener('submit', event =>{
     event.preventDefault();
 
     validateSignUp();
+});
+
+//Submit Log In
+logInForm.addEventListener('submit', event => {
+    event.preventDefault();
+    
+    validateLogIn();
 });
 
 
@@ -105,5 +114,25 @@ const validateSignUp = () => {
         setError(signUpPassword, 'Password requires at least 8 characters');
     } else {
         setSuccess(signUpPassword);
+    }
+};
+
+
+const validateLogIn = () => {
+
+   if(logInEmail.value.trim() === ''){
+        setError(logInEmail, 'Email is required');
+    } else if(!isEmailValid(logInEmail.value.trim())){
+        setError(logInEmail, 'Provide a valid email');
+    } else {
+        setSuccess(logInEmail);
+    }
+
+    if(logInPassword.value.trim() === ''){
+        setError(logInPassword, 'Password is required');
+    } else if(logInPassword.value.trim().length < 8 ){
+        setError(logInPassword, 'Password requires at least 8 characters');
+    } else {
+        setSuccess(logInPassword);
     }
 };
